@@ -1,11 +1,11 @@
 FROM library/postgres:16-alpine
 
-COPY init-databases.sh /docker-entrypoint-initdb.d/
+#COPY init-databases.sh /docker-entrypoint-initdb.d/
 COPY create-databases.sql /docker-entrypoint-initdb.d/
 
 ENV POSTGRES_HOST_AUTH_METHOD trust
 
-RUN chmod +x /docker-entrypoint-initdb.d/init-databases.sh
+#RUN chmod +x /docker-entrypoint-initdb.d/init-databases.sh
 RUN echo "host all  all    0.0.0.0/0  md5" >> pg_hba.conf
 RUN echo "listen_addresses='*'" >> postgresql.conf
 

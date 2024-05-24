@@ -1,4 +1,4 @@
-create user count;
-create database count;
-grant all privileges on database count to count;
-alter user count with superuser;
+create user florian;
+create database "fcq-count";
+grant all privileges on database "fcq-count" to florian;
+alter user florian with superuser;

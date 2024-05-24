@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t counter-database .
+docker build -t florianc04/counter-database .

@@ -12,3 +12,5 @@ yarn-error.log
 # Test stuff
 coverage/
 .nyc*
+
+kubeconfig.yml
